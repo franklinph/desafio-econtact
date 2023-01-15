@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+h1, h2, h3, p, figure {
+    /*margin: 0;*/
+}
+figure {
+    margin: 0;
+}
+header {
+    background-color: rgb(33, 111, 177);
+    padding: 1px 0;
+}
+header h1 {
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 3px 3px rgb(0, 0, 0, 0.5);
+}
+section.presencia {
+    padding: 1px 10% 20px 10%;
+    background-color: rgb(44, 153, 163)
+}
+section.presencia h2 {
+    color: #fff;
+    text-align: center;
+}
+section.presencia h2 strong {
+    font-size: 1.7rem;
+}
+section.presencia p {
+    text-align: center;
+    margin: 0 auto;
+}
+section.presentacion {
+    display: flex;
+    gap: 30px;
+    padding: 50px 15% 15px 15%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+section.presentacion>div,
+section.presentacion figure {
+    width: 50%;
+}
+section.presentacion h4 {
+    text-align: center;
+    color: #fff;
+    background-color: rgb(57, 57, 59);
+    padding: 5px 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+section.presentacion p {
+    padding: 0 10px;
+}
+section.presentacion figure img {
+    width: 100%;
+}
+section.trayectoria {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 30px 0;
+}
+section.trayectoria div.header {
+    text-align: center;
+}
+section.trayectoria div.header h3 {
+    color: rgb(33, 111, 177);
+}
+section.trayectoria div.header p {
+    color: rgba(57, 57, 59, 0.7);
+}
+section.trayectoria div.articles {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 5% 20px 5%;
+}
+section.trayectoria div.articles article {
+    text-align: center;
+    color: #fff;
+    background-color: rgb(33, 111, 177);
+    width: 33%;
+    padding: 30px 30px 50px 30px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+section.trayectoria div.articles article p {
+    min-height: 100px;
+}
+section.trayectoria div.articles article a {
+    display: inline-block;
+    color: rgb(33, 111, 177);
+    background-color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+section.trayectoria div.articles article a:hover {
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.75);
+}
+section.contacto {
+    color: #fff;
+    text-align: center;
+    background-color: rgb(44, 153, 163);
+    padding: 30px 0 20px 0;
+}
+section.contacto>div {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+section.contacto a {
+    display: inline-block;
+    color: rgb(33, 111, 177);
+    background-color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+section.contacto a:hover {
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.75);
+}
+footer {
+    display: flex;
+    /* justify-content: space-around; */
+    margin-top: 50px;
+    padding: 30px 0;
+    background: url(./images/footer-background.png) no-repeat;
+    background-color: rgb(33, 111, 177);
+    background-size: cover;
+}
+footer figure {
+    width: 30%;
+    text-align: right;
+}
+footer address {
+    flex: 1 1 auto;
+    color: #fff;
+    text-align: center;
+}
+footer address ul {
+    padding: 0;
+    list-style: none;
+}
+footer .redes {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .redes a {
+    display: inline-block;
+    text-decoration: none;
+}
+footer .redes img {
+    height: 40px;
+}
+.developer {
+    padding: 5px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #565555;
+}
+
+@media (max-width: 1200px) {
+    header {
+        /* background-color: red */
+    }
+}
+@media (max-width: 992px) {
+    header {
+        /* background-color: blue */
+    }
+}
+@media (max-width: 768px) {
+    header {
+        /* background-color: green */
+    }
+    section.presentacion {
+        padding: 50px 5% 15px 5%;
+    }
+    section.trayectoria div.articles {
+        gap: 10px;
+        padding: 50px 10px 20px 10px;
+    }
+}
+@media (max-width: 576px) {
+    header {
+        /* background-color: greenyellow */
+    }
+    section.presentacion {
+        padding: 50px 10px 15px 10px;
+    }
+    section.trayectoria div.articles {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    section.trayectoria div.articles article {
+        width: auto;
+    }
+    footer {
+        flex-wrap: wrap;
+    }
+    footer address {
+        width: 50%;
+    }
+}
